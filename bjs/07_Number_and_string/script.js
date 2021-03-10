@@ -153,16 +153,13 @@ let historyParagraph = [historyExp1, historyExp2, historyExp3, historyExp4, hist
 //Expression button
 
 document.getElementById('btn_eql').addEventListener('click', function () {
-    result = inputWindow.value.replace('^','**');
-    result = inputWindow.value.replace('\u221A', 'Math.sqrt')
+    result = inputWindow.value.replace('^', '**').replace('\u221A', 'Math.sqrt')
     resultWindow.value = eval(`${result}`);
 
     historyArr.push(inputWindow.value);
     if (historyArr.length > 9) {
         historyArr.shift();
     }
-
-    console.log(historyArr)
 
     let i = 0;
 
@@ -175,7 +172,6 @@ document.getElementById('btn_eql').addEventListener('click', function () {
 
     })
 
-    console.log(historyParagraph);
     inputWindow.value = "";
 
 })
