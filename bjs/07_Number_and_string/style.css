@@ -49,6 +49,11 @@
     color: darkgray;
 }
 
+#historyBox p:hover {
+    background-color: #9c9c9c;
+    color: white;
+}
+
 #historyBox p span {
     color: #2f2f2f;
 }

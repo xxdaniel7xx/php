@@ -180,6 +180,10 @@ document.getElementById('btn_eql').addEventListener('click', function () {
 
     historyParagraph.forEach(element => {
 
+        element.addEventListener('mouseover', function () {
+            element.style.cursor = 'pointer';
+        })
+
         element.addEventListener('click', function () {
             inputWindow.value = element.textContent;
             resultWindow.value = '';
