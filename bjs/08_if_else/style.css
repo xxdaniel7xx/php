@@ -1,4 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
+
+*{
+    font-family: 'Cousine', monospace;
+}
+
 .game-card {
-    height: 100vh;
-    font-family: 'Open Sans', monospace;
+    height: 80vh;
+
+}
+
+.btn {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #2f2f2f;
+}
+
+.title {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#numInp {
+    font-size: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #2f2f2f;
+    border-radius: 3px;
+}
+
+.card-header, .card-footer {
+    background-color: #4e4e4e;
+    color: white;
 }

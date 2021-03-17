@@ -10,28 +10,44 @@
 </head>
 <body>
 <div class="container">
+    <div class="title">
+        <div class="row justify-content-flex-start">
+            <div class="col col-md-6 offset-md-3">
+                <h1>Модуль 11. Практическая работа</h1>
+                <h2>Игра "Угадайка"</h2>
+            </div>
+        </div>
+    </div>
     <div class="row game-card align-items-center">
-        <div class="col col-md-4 offset-md-4">
+        <div class="col col-md-6 offset-md-3">
             <div class="card text-center">
                 <div class="card-header">
-                    <p class="m-0">Вопрос №<span id="orderNumberField">5</span></p>
+                    <p class="m-0">Вопрос №<span id="orderNumField">1</span></p>
                 </div>
                 <div class="card-body">
                     <div class="row no-gutters">
                         <div class="col">
-                            <h3 class="card-title m-0"><span id="answerField">Вы загадали число 5?</span></h3>
+                            <h3 class="card-title m-0"><span id="answerField">Введите число ОТ которого я буду угадывать?</span></h3>
                         </div>
                     </div>
                 </div>
                 <div class="card-body">
-                    <div class="btn-group">
-                        <button class="btn btn-info" id="btnLess">&#129047;<br>меньше</button>
-                        <button class="btn btn-success btn-lg" id="btnEqual">Верно!</button>
-                        <button class="btn btn-info" id="btnOver">больше<br>&#129045;</button>
+                    <div class="row no-gutters" id="inputForm">
+                        <div class="col-md-12 justify-content-center">
+                            <input id="numInp" type="number" placeholder="0">
+                            <button id="inpBtn" class="btn btn-success" type="button">Подтвердить</button>
+                        </div>
+                    </div>
+                    <div id="btnForm" class="row no-gutters">
+                        <div class="col-md-12 btn-group btn-group-sm">
+                            <button class="btn btn-info m-1" id="btnLess" >&#129047;<br>меньше</button>
+                            <button class="btn btn-success btn-lg m-1" id="btnEqual">Верно!</button>
+                            <button class="btn btn-info m-1" id="btnOver">больше<br>&#129045;</button>
+                        </div>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <button class="btn btn-link" id="btnRetry">Заново</button>
+                    <button class="btn btn-danger btn-block" id="btnRetry" type="button">Заново</button>
                 </div>
             </div>
         </div>
