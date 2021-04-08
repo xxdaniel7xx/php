@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+* {
+    font-family: "Rockwell Condensed", sans-serif;
+}
+
+.block {
+    border-color: #4e4e4e;
+    border-style: solid;
+    border-radius: 4px;
+    margin-top: 50px;
+}
+
+.block-header {
+    background-color: #4e4e4e;
+    color: white;
+    font-size: 21px;
+    padding: 10px;
+}
+
+.block-body h3, h4, p {
+    padding: 5px;
+}
+
+.block-footer {
+    background-color: #4e4e4e;
+
+}
